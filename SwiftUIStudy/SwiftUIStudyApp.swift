@@ -32,7 +32,20 @@ struct MainView: View {
                 ) {
                     Text("LandmarkList")
                 }
-//                .navigationBarTitle("Swift UI Study")
+                
+                NavigationLink(
+                    destination: Badge(),
+                    label: {
+                        Text("Badge")
+                    })
+                
+                NavigationLink(
+                    destination: CategoryHome(),
+                    label: {
+                        Text("CategoryHome")
+                    })
+                
+                Spacer()
             }
         }
     }
